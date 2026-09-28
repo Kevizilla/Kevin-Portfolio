@@ -28,7 +28,6 @@ a { color: inherit; text-decoration: none; }
   background-image: linear-gradient(#151515 1px, transparent 1px), linear-gradient(90deg, #151515 1px, transparent 1px);
   background-size: 52px 52px;
 }
-.section-shell, .navbar { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
 
 /* Navigation */
 .navbar {
@@ -189,7 +188,6 @@ a { color: inherit; text-decoration: none; }
 
 /* Phone */
 @media (max-width: 620px) {
-  .section-shell, .navbar { width: min(calc(100% - 24px), var(--max)); }
   .navbar { top: 7px; margin-top: 7px; min-height: 52px; padding-inline: 10px; border-radius: 9px; }
   .brand { font-size: 15px; }
   .brand-mark { width: 29px; height: 29px; }
