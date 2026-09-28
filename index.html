@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kevin Stephen — student developer portfolio">
+  <title>Kevin Stephen | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-grid"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="Kevin Stephen home"><span class="brand-mark">K</span><span>Kevin</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    </nav>
+    <a class="nav-button" href="#contact">Contact</a>
+  </header>
+
+  <main>
+    <section id="home" class="intro section-shell">
+      <div class="intro-photo"><img src="profile.png" alt="Kevin Stephen"></div>
+      <div class="intro-copy">
+        <p class="eyebrow">🚀 Building, learning, and shipping</p>
+        <h1>Hi, I'm Kevin —<br><span>Student Developer</span><br>& Problem Solver</h1>
+        <p class="intro-text">I enjoy turning programming problems into simple solutions and building clean web experiences along the way.</p>
+        <div class="intro-actions"><a class="primary-button" href="#projects">See my work</a><a class="text-button" href="#about">A little about me <span>↓</span></a></div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section section-shell">
+      <div class="section-heading"><p class="section-label">01 / About</p><h2>Still learning. Still building.</h2></div>
+      <div class="about-grid">
+        <div class="about-card large-card">
+          <p>I'm a student at <strong>Scaler School of Technology</strong> and currently spending a lot of time with Python, problem solving, and web development. I like understanding how things work instead of only memorising syntax.</p>
+          <p>Lately I've been exploring HTML/CSS, Java, JavaScript, Git, and competitive programming. My current goal is simple: become much better at solving unfamiliar problems and build projects that are actually useful.</p>
+        </div>
+        <div class="about-card mini-card"><span class="card-number">01</span><h3>Problem solving</h3><p>Arrays, hashing, maths, recursion, sorting, complexity and contest-style thinking.</p></div>
+        <div class="about-card mini-card"><span class="card-number">02</span><h3>Web development</h3><p>Responsive layouts, Flexbox, Grid, semantic HTML and clean CSS.</p></div>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section section-shell">
+      <div class="section-heading"><p class="section-label">02 / Skills</p><h2>What I'm working with</h2></div>
+      <div class="skills-list">
+        <div class="skill-row"><span class="skill-name">Python</span><span class="skill-note">main language</span><div class="skill-bar"><span style="width:90%"></span></div></div>
+        <div class="skill-row"><span class="skill-name">HTML / CSS</span><span class="skill-note">web foundations</span><div class="skill-bar"><span style="width:82%"></span></div></div>
+        <div class="skill-row"><span class="skill-name">Java</span><span class="skill-note">building fundamentals</span><div class="skill-bar"><span style="width:62%"></span></div></div>
+        <div class="skill-row"><span class="skill-name">JavaScript</span><span class="skill-note">currently learning</span><div class="skill-bar"><span style="width:45%"></span></div></div>
+        <div class="skill-row"><span class="skill-name">Git / GitHub</span><span class="skill-note">project workflow</span><div class="skill-bar"><span style="width:68%"></span></div></div>
+      </div>
+      <div class="tag-list" aria-label="Additional skills"><span>Competitive Programming</span><span>Responsive Design</span><span>CSS Grid</span><span>Flexbox</span><span>Problem Solving</span></div>
+    </section>
+
+    <section id="projects" class="content-section section-shell">
+      <div class="section-heading split-heading"><div><p class="section-label">03 / Projects</p><h2>A few things I've built</h2></div><span class="muted-note">selected work</span></div>
+      <div class="project-grid">
+        <article class="project-card featured-project"><div class="project-topline"><span>NEXUS</span><span>01</span></div><h3>Student dashboard</h3><p>A futuristic student dashboard concept made during an 11-hour hackathon. It brings together timetable, attendance, assignments, announcements, study groups and an AI companion idea in one place.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>UI</span><span>Concept</span></div></article>
+        <article class="project-card"><div class="project-topline"><span>PORTFOLIO</span><span>02</span></div><h3>This website</h3><p>A dark, grid-based portfolio focused on readable layout, responsive design and a straightforward visual style.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div></article>
+        <article class="project-card"><div class="project-topline"><span>CP PRACTICE</span><span>03</span></div><h3>Contest problem solving</h3><p>Regular practice with Codeforces-style problems covering arrays, sorting, XOR, number theory, greedy ideas, complexity and implementation.</p><div class="project-tags"><span>Python</span><span>Algorithms</span><span>DSA</span></div></article>
+      </div>
+    </section>
+
+    <section class="content-section section-shell">
+      <div class="section-heading"><p class="section-label">04 / Highlights</p><h2>Things I'm proud of so far</h2></div>
+      <div class="highlight-grid">
+        <div class="highlight-card"><strong>11 hr</strong><span>hackathon build sprint</span></div>
+        <div class="highlight-card"><strong>5+</strong><span>core tech areas I'm practising</span></div>
+        <div class="highlight-card"><strong>∞</strong><span>bugs that eventually became lessons</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-shell">
+      <div><p class="section-label">05 / Contact</p><h2>Have a project or just want to talk code?</h2><p class="contact-text">Email is the easiest way to reach me. Replace the placeholder address below with your real one before submitting.</p></div>
+      <a class="primary-button" href="mailto:your-email@example.com">your-email@example.com ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer section-shell"><span>© 2026 Kevin Stephen</span><span>Built with HTML + CSS</span></footer>
+<script>
+  const links = document.querySelectorAll('.nav-links a');
+  const sections = document.querySelectorAll('main section[id]');
+
+  function updateActiveLink() {
+    let current = 'home';
+    sections.forEach(section => {
+      if (section.getBoundingClientRect().top <= window.innerHeight * 0.35) current = section.id;
+    });
+    links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${current}`));
+  }
+
+  window.addEventListener('scroll', updateActiveLink);
+  updateActiveLink();
+</script>
+</body>
+</html>
