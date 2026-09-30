@@ -8,91 +8,348 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="page-grid"></div>
 
-  <header class="navbar">
-    <a class="brand" href="#home" aria-label="Kevin Stephen home"><span class="brand-mark">K</span><span>Kevin</span></a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+<body>
+  <div class="bg-grid"></div>
+
+  <!-- top bar -->
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Kevin Stephen home">
+      <span class="logo-letter">K</span>
+      <span>Kevin</span>
+    </a>
+
+    <nav class="menu" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
     </nav>
-    <a class="nav-button" href="#contact">Contact</a>
+
+    <a class="contact-btn" href="#contact">Contact</a>
   </header>
 
   <main>
-    <section id="home" class="intro section-shell">
-      <div class="intro-photo"><img src="profile.png" alt="Kevin Stephen"></div>
-      <div class="intro-copy">
-        <p class="eyebrow">🚀 Building, learning, and shipping</p>
-        <h1>Hi, I'm Kevin —<br><span>Student Developer</span><br>& Problem Solver</h1>
-        <p class="intro-text">I enjoy turning programming problems into simple solutions and building clean web experiences along the way.</p>
-        <div class="intro-actions"><a class="primary-button" href="#projects">See my work</a><a class="text-button" href="#about">A little about me <span>↓</span></a></div>
-      </div>
-    </section>
 
-    <section id="about" class="content-section section-shell">
-      <div class="section-heading"><p class="section-label">01 / About</p><h2>Still learning. Still building.</h2></div>
-      <div class="about-grid">
-        <div class="about-card large-card">
-          <p>I'm a student at <strong>Scaler School of Technology</strong> and currently spending a lot of time with Python, problem solving, and web development. I like understanding how things work instead of only memorising syntax.</p>
-          <p>Lately I've been exploring HTML/CSS, Java, JavaScript, Git, and competitive programming. My current goal is simple: become much better at solving unfamiliar problems and build projects that are actually useful.</p>
+    <!-- hero -->
+    <section id="home" class="hero wrap">
+      <div class="hero-pic">
+        <img src="profile.png" alt="Kevin Stephen">
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-tag">🚀 Always building something</p>
+
+        <h1>
+          Hey, I'm Kevin —<br>
+          <span>a student who codes</span><br>
+          & loves a good puzzle
+        </h1>
+
+        <p class="hero-blurb">
+          I like taking messy programming problems and boiling them down
+          to something simple. Along the way I try to build clean,
+          easy-to-use websites.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn" href="#projects">Check out my projects</a>
+          <a class="link-btn" href="#about">
+            More about me <span>↓</span>
+          </a>
         </div>
-        <div class="about-card mini-card"><span class="card-number">01</span><h3>Problem solving</h3><p>Arrays, hashing, maths, recursion, sorting, complexity and contest-style thinking.</p></div>
-        <div class="about-card mini-card"><span class="card-number">02</span><h3>Web development</h3><p>Responsive layouts, Flexbox, Grid, semantic HTML and clean CSS.</p></div>
       </div>
     </section>
 
-    <section id="skills" class="content-section section-shell">
-      <div class="section-heading"><p class="section-label">02 / Skills</p><h2>What I'm working with</h2></div>
-      <div class="skills-list">
-        <div class="skill-row"><span class="skill-name">Python</span><span class="skill-note">main language</span><div class="skill-bar"><span style="width:90%"></span></div></div>
-        <div class="skill-row"><span class="skill-name">HTML / CSS</span><span class="skill-note">web foundations</span><div class="skill-bar"><span style="width:82%"></span></div></div>
-        <div class="skill-row"><span class="skill-name">Java</span><span class="skill-note">building fundamentals</span><div class="skill-bar"><span style="width:62%"></span></div></div>
-        <div class="skill-row"><span class="skill-name">JavaScript</span><span class="skill-note">currently learning</span><div class="skill-bar"><span style="width:45%"></span></div></div>
-        <div class="skill-row"><span class="skill-name">Git / GitHub</span><span class="skill-note">project workflow</span><div class="skill-bar"><span style="width:68%"></span></div></div>
+    <!-- about -->
+    <section id="about" class="block wrap">
+      <div class="block-title">
+        <p class="kicker">01 / About</p>
+        <h2>Learning something new every day</h2>
       </div>
-      <div class="tag-list" aria-label="Additional skills"><span>Competitive Programming</span><span>Responsive Design</span><span>CSS Grid</span><span>Flexbox</span><span>Problem Solving</span></div>
+
+      <div class="about-layout">
+        <div class="about-box about-main">
+          <p>
+            I'm studying at <strong>Scaler School of Technology</strong>,
+            and most of my time goes into Python, problem solving and web
+            development. I'd rather understand why something works than
+            just memorise the syntax.
+          </p>
+
+          <p>
+            Recently I've been picking up HTML/CSS, Java, JavaScript and Git,
+            and I practise competitive programming on the side. What I
+            really want is to get better at tackling problems I've never
+            seen before, and to build things people can actually use.
+          </p>
+        </div>
+
+        <div class="about-box about-small">
+          <span class="num">01</span>
+          <h3>Problem solving</h3>
+          <p>
+            Arrays, hashing, maths, recursion, sorting, complexity,
+            and thinking the way contests make you think.
+          </p>
+        </div>
+
+        <div class="about-box about-small">
+          <span class="num">02</span>
+          <h3>Web development</h3>
+          <p>
+            Responsive layouts, Flexbox, Grid, semantic HTML and tidy CSS.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="content-section section-shell">
-      <div class="section-heading split-heading"><div><p class="section-label">03 / Projects</p><h2>A few things I've built</h2></div><span class="muted-note">selected work</span></div>
-      <div class="project-grid">
-        <article class="project-card featured-project"><div class="project-topline"><span>NEXUS</span><span>01</span></div><h3>Student dashboard</h3><p>A futuristic student dashboard concept made during an 11-hour hackathon. It brings together timetable, attendance, assignments, announcements, study groups and an AI companion idea in one place.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>UI</span><span>Concept</span></div></article>
-        <article class="project-card"><div class="project-topline"><span>PORTFOLIO</span><span>02</span></div><h3>This website</h3><p>A dark, grid-based portfolio focused on readable layout, responsive design and a straightforward visual style.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div></article>
-        <article class="project-card"><div class="project-topline"><span>CP PRACTICE</span><span>03</span></div><h3>Contest problem solving</h3><p>Regular practice with Codeforces-style problems covering arrays, sorting, XOR, number theory, greedy ideas, complexity and implementation.</p><div class="project-tags"><span>Python</span><span>Algorithms</span><span>DSA</span></div></article>
+    <!-- skills -->
+    <section id="skills" class="block wrap">
+      <div class="block-title">
+        <p class="kicker">02 / Skills</p>
+        <h2>The tools I use</h2>
+      </div>
+
+      <div class="skill-list">
+        <div class="skill">
+          <span class="skill-title">Python</span>
+          <span class="skill-hint">my go-to language</span>
+          <div class="bar">
+            <span data-width="90%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span class="skill-title">HTML / CSS</span>
+          <span class="skill-hint">the web basics</span>
+          <div class="bar">
+            <span data-width="82%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span class="skill-title">Java</span>
+          <span class="skill-hint">getting the fundamentals down</span>
+          <div class="bar">
+            <span data-width="62%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span class="skill-title">JavaScript</span>
+          <span class="skill-hint">learning it right now</span>
+          <div class="bar">
+            <span data-width="45%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span class="skill-title">Git / GitHub</span>
+          <span class="skill-hint">how I manage my projects</span>
+          <div class="bar">
+            <span data-width="68%"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chips" aria-label="Additional skills">
+        <span>Competitive Programming</span>
+        <span>Responsive Design</span>
+        <span>CSS Grid</span>
+        <span>Flexbox</span>
+        <span>Problem Solving</span>
       </div>
     </section>
 
-    <section class="content-section section-shell">
-      <div class="section-heading"><p class="section-label">04 / Highlights</p><h2>Things I'm proud of so far</h2></div>
-      <div class="highlight-grid">
-        <div class="highlight-card"><strong>11 hr</strong><span>hackathon build sprint</span></div>
-        <div class="highlight-card"><strong>5+</strong><span>core tech areas I'm practising</span></div>
-        <div class="highlight-card"><strong>∞</strong><span>bugs that eventually became lessons</span></div>
+    <!-- projects -->
+    <section id="projects" class="block wrap">
+      <div class="block-title title-split">
+        <div>
+          <p class="kicker">03 / Projects</p>
+          <h2>Stuff I've made</h2>
+        </div>
+
+        <span class="side-note">a few favourites</span>
+      </div>
+
+      <div class="projects-wrap">
+        <article class="project project-main">
+          <div class="project-head">
+            <span>NEXUS</span>
+            <span>01</span>
+          </div>
+
+          <h3>Student dashboard</h3>
+
+          <p>
+            A futuristic student dashboard I put together during an
+            11-hour hackathon. Timetable, attendance, assignments,
+            announcements, study groups and an idea for an AI companion,
+            all in one spot.
+          </p>
+
+          <div class="project-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>UI</span>
+            <span>Concept</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span>PORTFOLIO</span>
+            <span>02</span>
+          </div>
+
+          <h3>This website</h3>
+
+          <p>
+            A dark, grid-style portfolio that's easy to read, works on
+            any screen size, and keeps the design simple.
+          </p>
+
+          <div class="project-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span>CP PRACTICE</span>
+            <span>03</span>
+          </div>
+
+          <h3>Contest problem solving</h3>
+
+          <p>
+            I practise Codeforces-style problems regularly: arrays,
+            sorting, XOR, number theory, greedy approaches, complexity
+            and implementation.
+          </p>
+
+          <div class="project-stack">
+            <span>Python</span>
+            <span>Algorithms</span>
+            <span>DSA</span>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="contact-section section-shell">
-      <div><p class="section-label">05 / Contact</p><h2>Have a project or just want to talk code?</h2><p class="contact-text">Email is the easiest way to reach me. Replace the placeholder address below with your real one before submitting.</p></div>
-      <a class="primary-button" href="mailto:b.kevinstephen@gmail.com">b.kevinstephen@gmail.com↗</a>
+    <!-- highlights -->
+    <section class="block wrap">
+      <div class="block-title">
+        <p class="kicker">04 / Highlights</p>
+        <h2>A few things I'm happy about</h2>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>11 hr</strong>
+          <span>hackathon, start to finish</span>
+        </div>
+
+        <div class="stat">
+          <strong>5+</strong>
+          <span>areas of tech I'm practising</span>
+        </div>
+
+        <div class="stat">
+          <strong>∞</strong>
+          <span>bugs that taught me something</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="contact wrap">
+      <div>
+        <p class="kicker">05 / Contact</p>
+        <h2>Got an idea, or just want to talk code?</h2>
+
+        <p class="contact-note">
+          Email is the best way to reach me. I'd love to hear from you.
+        </p>
+      </div>
+
+      <a class="btn" href="mailto:b.kevinstephen@gmail.com">
+        b.kevinstephen@gmail.com ↗
+      </a>
     </section>
   </main>
 
-</footer>
-<script>
-  const links = document.querySelectorAll('.nav-links a');
-  const sections = document.querySelectorAll('main section[id]');
+  <button id="topBtn" aria-label="Back to top">↑</button>
 
-  function updateActiveLink() {
-    let current = 'home';
-    sections.forEach(section => {
-      if (section.getBoundingClientRect().top <= window.innerHeight * 0.35) current = section.id;
+  <script>
+    const navLinks = document.querySelectorAll(".menu a");
+    const pageSections = document.querySelectorAll("main section[id]");
+    const topBtn = document.getElementById("topBtn");
+    const barFills = document.querySelectorAll(".bar span");
+    const skillsBlock = document.getElementById("skills");
+
+    // little welcome popup
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        alert("Welcome to Kevin's portfolio! 🚀");
+      }, 500);
     });
-    links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${current}`));
-  }
 
-  window.addEventListener('scroll', updateActiveLink);
-  updateActiveLink();
-</script>
+    // highlight the nav link for whichever section we're in
+    function highlightNav() {
+      let currentId = "home";
+
+      pageSections.forEach(function (sec) {
+        if (sec.getBoundingClientRect().top <= window.innerHeight * 0.35) {
+          currentId = sec.id;
+        }
+      });
+
+      navLinks.forEach(function (link) {
+        link.classList.toggle(
+          "active",
+          link.getAttribute("href") === "#" + currentId
+        );
+      });
+    }
+
+    window.addEventListener("scroll", highlightNav);
+
+    // show the back-to-top button once you've scrolled a bit
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 400) {
+        topBtn.classList.add("show");
+      } else {
+        topBtn.classList.remove("show");
+      }
+    });
+
+    topBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+    // fill the skill bars the first time the skills section scrolls into view
+    const barObserver = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        barFills.forEach(function (fill) {
+          fill.style.width = fill.dataset.width;
+        });
+
+        barObserver.disconnect();
+      }
+    }, {
+      threshold: 0.3
+    });
+
+    barObserver.observe(skillsBlock);
+
+    highlightNav();
+  </script>
 </body>
 </html>
