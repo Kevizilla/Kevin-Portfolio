@@ -1,356 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kevin Stephen — student developer portfolio">
-  <title>Kevin Stephen | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kevin Stephen — student developer portfolio"
+    />
+    <title>Kevin Stephen | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <div class="bg-grid"></div>
+  <body>
+    <div class="bg-grid"></div>
 
-  <!-- top bar -->
-  <header class="site-header">
-    <a class="logo" href="#home" aria-label="Kevin Stephen home">/
-      <span class="logo-letter">K</span>
-      <span>Kevin</span>
-    </a>
-
-    <nav class="menu" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-    </nav>
-
-    <a class="contact-btn" href="#contact">Contact</a>
-  </header>
-
-  <main>
-
-    <!-- hero -->
-    <section id="home" class="hero wrap">
-      <div class="hero-pic">
-        <img src="profile.png" alt="Kevin Stephen">
-      </div>
-
-      <div class="hero-text">
-        <p class="hero-tag">🚀 Always building something</p>
-
-        <h1>
-          Hey, I'm Kevin —<br>
-          <span>a student who codes</span><br>
-          & loves a good puzzle
-        </h1>
-
-        <p class="hero-blurb">
-          I like taking messy programming problems and boiling them down
-          to something simple. Along the way I try to build clean,
-          easy-to-use websites.
-        </p>
-
-        <div class="hero-buttons">
-          <a class="btn" href="#projects">Check out my projects</a>
-          <a class="link-btn" href="#about">
-            More about me <span>↓</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- about -->
-    <section id="about" class="block wrap">
-      <div class="block-title">
-        <p class="kicker">01 / About</p>
-        <h2>Learning something new every day</h2>
-      </div>
-
-      <div class="about-layout">
-        <div class="about-box about-main">
-          <p>
-            I'm studying at <strong>Scaler School of Technology</strong>,
-            and most of my time goes into Python, problem solving and web
-            development. I'd rather understand why something works than
-            just memorise the syntax.
-          </p>
-
-          <p>
-            Recently I've been picking up HTML/CSS, Java, JavaScript and Git,
-            and I practise competitive programming on the side. What I
-            really want is to get better at tackling problems I've never
-            seen before, and to build things people can actually use.
-          </p>
-        </div>
-
-        <div class="about-box about-small">
-          <span class="num">01</span>
-          <h3>Problem solving</h3>
-          <p>
-            Arrays, hashing, maths, recursion, sorting, complexity,
-            and thinking the way contests make you think.
-          </p>
-        </div>
-
-        <div class="about-box about-small">
-          <span class="num">02</span>
-          <h3>Web development</h3>
-          <p>
-            Responsive layouts, Flexbox, Grid, semantic HTML and tidy CSS.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- skills -->
-    <section id="skills" class="block wrap">
-      <div class="block-title">
-        <p class="kicker">02 / Skills</p>
-        <h2>The tools I use</h2>
-      </div>
-
-      <div class="skill-list">
-        <div class="skill">
-          <span class="skill-title">Python</span>
-          <span class="skill-hint">my go-to language</span>
-          <div class="bar">
-            <span data-width="90%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <span class="skill-title">HTML / CSS</span>
-          <span class="skill-hint">the web basics</span>
-          <div class="bar">
-            <span data-width="82%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <span class="skill-title">Java</span>
-          <span class="skill-hint">getting the fundamentals down</span>
-          <div class="bar">
-            <span data-width="62%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <span class="skill-title">JavaScript</span>
-          <span class="skill-hint">learning it right now</span>
-          <div class="bar">
-            <span data-width="45%"></span>
-          </div>
-        </div>
-
-        <div class="skill">
-          <span class="skill-title">Git / GitHub</span>
-          <span class="skill-hint">how I manage my projects</span>
-          <div class="bar">
-            <span data-width="68%"></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="chips" aria-label="Additional skills">
-        <span>Competitive Programming</span>
-        <span>Responsive Design</span>
-        <span>CSS Grid</span>
-        <span>Flexbox</span>
-        <span>Problem Solving</span>
-      </div>
-    </section>
-
-    <!-- projects -->
-    <section id="projects" class="block wrap">
-      <div class="block-title title-split">
-        <div>
-          <p class="kicker">03 / Projects</p>
-          <h2>Stuff I've made</h2>
-        </div>
-
-        <span class="side-note">a few favourites</span>
-      </div>
-
-      <div class="projects-wrap">
-        <article class="project project-main">
-          <div class="project-head">
-            <span>NEXUS</span>
-            <span>01</span>
-          </div>
-
-          <h3>Student dashboard</h3>
-
-          <p>
-            A futuristic student dashboard I put together during an
-            11-hour hackathon. Timetable, attendance, assignments,
-            announcements, study groups and an idea for an AI companion,
-            all in one spot.
-          </p>
-
-          <div class="project-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>UI</span>
-            <span>Concept</span>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <span>PORTFOLIO</span>
-            <span>02</span>
-          </div>
-
-          <h3>This website</h3>
-
-          <p>
-            A dark, grid-style portfolio that's easy to read, works on
-            any screen size, and keeps the design simple.
-          </p>
-
-          <div class="project-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Responsive</span>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <span>CP PRACTICE</span>
-            <span>03</span>
-          </div>
-
-          <h3>Contest problem solving</h3>
-
-          <p>
-            I practise Codeforces-style problems regularly: arrays,
-            sorting, XOR, number theory, greedy approaches, complexity
-            and implementation.
-          </p>
-
-          <div class="project-stack">
-            <span>Python</span>
-            <span>Algorithms</span>
-            <span>DSA</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- highlights -->
-    <section class="block wrap">
-      <div class="block-title">
-        <p class="kicker">04 / Highlights</p>
-        <h2>A few things I'm happy about</h2>
-      </div>
-
-      <div class="stats">
-        <div class="stat">
-          <strong>11 hr</strong>
-          <span>hackathon, start to finish</span>
-        </div>
-
-        <div class="stat">
-          <strong>5+</strong>
-          <span>areas of tech I'm practising</span>
-        </div>
-
-        <div class="stat">
-          <strong>∞</strong>
-          <span>bugs that taught me something</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact -->
-    <section id="contact" class="contact wrap">
-      <div>
-        <p class="kicker">05 / Contact</p>
-        <h2>Got an idea, or just want to talk code?</h2>
-
-        <p class="contact-note">
-          Email is the best way to reach me. I'd love to hear from you.
-        </p>
-      </div>
-
-      <a class="btn" href="mailto:b.kevinstephen@gmail.com">
-        b.kevinstephen@gmail.com ↗
+    <!-- top bar -->
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Kevin Stephen home"
+        >/
+        <span class="logo-letter">K</span>
+        <span>Kevin</span>
       </a>
-    </section>
-  </main>
 
-  <button id="topBtn" aria-label="Back to top">↑</button>
-  
-  <!-- JS Stuff-->
-  <script>
-    const navLinks = document.querySelectorAll(".menu a");
-    const pageSections = document.querySelectorAll("main section[id]");
-    const topBtn = document.getElementById("topBtn");
-    const barFills = document.querySelectorAll(".bar span");
-    const skillsBlock = document.getElementById("skills");
+      <nav class="menu" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </nav>
 
-    // little welcome popup
-    window.addEventListener("load", function () {
-      setTimeout(function () {
-        alert("Welcome to Kevin's portfolio! 🚀");
-      }, 500);
-    });
+      <a class="contact-btn" href="#contact">Contact</a>
+    </header>
 
-    // highlight the nav link for whichever section we're in
-    function highlightNav() {
-      let currentId = "home";
+    <main>
+      <!-- hero -->
+      <section id="home" class="hero wrap">
+        <div class="hero-pic">
+          <img src="profile.png" alt="Kevin Stephen" />
+        </div>
 
-      pageSections.forEach(function (sec) {
-        if (sec.getBoundingClientRect().top <= window.innerHeight * 0.35) {
-          currentId = sec.id;
+        <div class="hero-text">
+          <p class="hero-tag">🚀 Always building something</p>
+
+          <h1>
+            Hey, I'm Kevin —<br />
+            <span>a student who codes</span><br />
+            & loves a good puzzle
+          </h1>
+
+          <p class="hero-blurb">
+            I like taking messy programming problems and boiling them down to
+            something simple. Along the way I try to build clean, easy-to-use
+            websites.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn" href="#projects">Check out my projects</a>
+            <a class="link-btn" href="#about"> More about me <span>↓</span> </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section id="about" class="block wrap">
+        <div class="block-title">
+          <p class="kicker">01 / About</p>
+          <h2>Learning something new every day</h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-box about-main">
+            <p>
+              I'm studying at <strong>Scaler School of Technology</strong>, and
+              most of my time goes into Python, problem solving and web
+              development. I'd rather understand why something works than just
+              memorise the syntax.
+            </p>
+
+            <p>
+              Recently I've been picking up HTML/CSS, Java, JavaScript and Git,
+              and I practise competitive programming on the side. What I really
+              want is to get better at tackling problems I've never seen before,
+              and to build things people can actually use.
+            </p>
+          </div>
+
+          <div class="about-box about-small">
+            <span class="num">01</span>
+            <h3>Problem solving</h3>
+            <p>
+              Arrays, hashing, maths, recursion, sorting, complexity, and
+              thinking the way contests make you think.
+            </p>
+          </div>
+
+          <div class="about-box about-small">
+            <span class="num">02</span>
+            <h3>Web development</h3>
+            <p>
+              Responsive layouts, Flexbox, Grid, semantic HTML and tidy CSS.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section id="skills" class="block wrap">
+        <div class="block-title">
+          <p class="kicker">02 / Skills</p>
+          <h2>The tools I use</h2>
+        </div>
+
+        <div class="skill-list">
+          <div class="skill">
+            <span class="skill-title">Python</span>
+            <span class="skill-hint">my go-to language</span>
+            <div class="bar">
+              <span data-width="90%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span class="skill-title">HTML / CSS</span>
+            <span class="skill-hint">the web basics</span>
+            <div class="bar">
+              <span data-width="82%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span class="skill-title">Java</span>
+            <span class="skill-hint">getting the fundamentals down</span>
+            <div class="bar">
+              <span data-width="62%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span class="skill-title">JavaScript</span>
+            <span class="skill-hint">learning it right now</span>
+            <div class="bar">
+              <span data-width="45%"></span>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span class="skill-title">Git / GitHub</span>
+            <span class="skill-hint">how I manage my projects</span>
+            <div class="bar">
+              <span data-width="68%"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chips" aria-label="Additional skills">
+          <span>Competitive Programming</span>
+          <span>Responsive Design</span>
+          <span>CSS Grid</span>
+          <span>Flexbox</span>
+          <span>Problem Solving</span>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section id="projects" class="block wrap">
+        <div class="block-title title-split">
+          <div>
+            <p class="kicker">03 / Projects</p>
+            <h2>Stuff I've made</h2>
+          </div>
+
+          <span class="side-note">a few favourites</span>
+        </div>
+
+        <div class="projects-wrap">
+          <article class="project project-main">
+            <div class="project-head">
+              <span>NEXUS</span>
+              <span>01</span>
+            </div>
+
+            <h3>Student dashboard</h3>
+
+            <p>
+              A futuristic student dashboard I put together during an 11-hour
+              hackathon. Timetable, attendance, assignments, announcements,
+              study groups and an idea for an AI companion, all in one spot.
+            </p>
+
+            <div class="project-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>UI</span>
+              <span>Concept</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <span>PORTFOLIO</span>
+              <span>02</span>
+            </div>
+
+            <h3>This website</h3>
+
+            <p>
+              A dark, grid-style portfolio that's easy to read, works on any
+              screen size, and keeps the design simple.
+            </p>
+
+            <div class="project-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <span>CP PRACTICE</span>
+              <span>03</span>
+            </div>
+
+            <h3>Contest problem solving</h3>
+
+            <p>
+              I practise Codeforces-style problems regularly: arrays, sorting,
+              XOR, number theory, greedy approaches, complexity and
+              implementation.
+            </p>
+
+            <div class="project-stack">
+              <span>Python</span>
+              <span>Algorithms</span>
+              <span>DSA</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- highlights -->
+      <section class="block wrap">
+        <div class="block-title">
+          <p class="kicker">04 / Highlights</p>
+          <h2>A few things I'm happy about</h2>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>11 hr</strong>
+            <span>hackathon, start to finish</span>
+          </div>
+
+          <div class="stat">
+            <strong>5+</strong>
+            <span>areas of tech I'm practising</span>
+          </div>
+
+          <div class="stat">
+            <strong>∞</strong>
+            <span>bugs that taught me something</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section id="contact" class="contact wrap">
+        <div>
+          <p class="kicker">05 / Contact</p>
+          <h2>Got an idea, or just want to talk code?</h2>
+
+          <p class="contact-note">
+            Email is the best way to reach me. I'd love to hear from you.
+          </p>
+        </div>
+
+        <a class="btn" href="mailto:b.kevinstephen@gmail.com">
+          b.kevinstephen@gmail.com ↗
+        </a>
+      </section>
+    </main>
+
+    <button id="topBtn" aria-label="Back to top">↑</button>
+
+    <!-- JS Stuff-->
+    <script>
+      const navLinks = document.querySelectorAll(".menu a");
+      const pageSections = document.querySelectorAll("main section[id]");
+      const topBtn = document.getElementById("topBtn");
+      const barFills = document.querySelectorAll(".bar span");
+      const skillsBlock = document.getElementById("skills");
+
+      // highlight the nav link for whichever section we're in
+      function highlightNav() {
+        let currentId = "home";
+
+        pageSections.forEach(function (sec) {
+          if (sec.getBoundingClientRect().top <= window.innerHeight * 0.35) {
+            currentId = sec.id;
+          }
+        });
+
+        navLinks.forEach(function (link) {
+          link.classList.toggle(
+            "active",
+            link.getAttribute("href") === "#" + currentId,
+          );
+        });
+      }
+
+      window.addEventListener("scroll", highlightNav);
+
+      // show the back-to-top button once you've scrolled a bit
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+          topBtn.classList.add("show");
+        } else {
+          topBtn.classList.remove("show");
         }
       });
 
-      navLinks.forEach(function (link) {
-        link.classList.toggle(
-          "active",
-          link.getAttribute("href") === "#" + currentId
-        );
-      });
-    }
-
-    window.addEventListener("scroll", highlightNav);
-
-    // show the back-to-top button once you've scrolled a bit
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 400) {
-        topBtn.classList.add("show");
-      } else {
-        topBtn.classList.remove("show");
-      }
-    });
-
-    topBtn.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-
-    // fill the skill bars the first time the skills section scrolls into view
-    const barObserver = new IntersectionObserver(function (entries) {
-      if (entries[0].isIntersecting) {
-        barFills.forEach(function (fill) {
-          fill.style.width = fill.dataset.width;
+      topBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
+      });
 
-        barObserver.disconnect();
-      }
-    }, {
-      threshold: 0.3
-    });
+      // fill the skill bars the first time the skills section scrolls into view
+      const barObserver = new IntersectionObserver(
+        function (entries) {
+          if (entries[0].isIntersecting) {
+            barFills.forEach(function (fill) {
+              fill.style.width = fill.dataset.width;
+            });
 
-    barObserver.observe(skillsBlock);
+            barObserver.disconnect();
+          }
+        },
+        {
+          threshold: 0.3,
+        },
+      );
 
-    highlightNav();
-  </script>
-</body>
+      barObserver.observe(skillsBlock);
+
+      highlightNav();
+    </script>
+  </body>
 </html>
