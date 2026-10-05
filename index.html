@@ -18,26 +18,24 @@
   <body>
     <div class="bg-grid"></div>
 
-    <!-- top bar -->
     <header class="site-header">
-      <a class="logo" href="#home" aria-label="Kevin Stephen home"
-        >/
+      <a class="logo" href="#home" aria-label="Kevin Stephen home">
+        /
         <span class="logo-letter">K</span>
         <span>Kevin</span>
       </a>
 
       <nav class="menu" aria-label="Main navigation">
-        <a href="#home">Home</a>
+          <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+            <a href="#projects">Projects</a>
       </nav>
 
       <a class="contact-btn" href="#contact">Contact</a>
     </header>
 
     <main>
-      <!-- hero -->
       <section id="home" class="hero wrap">
         <div class="hero-pic">
           <img src="profile.png" alt="Kevin Stephen" />
@@ -65,7 +63,6 @@
         </div>
       </section>
 
-      <!-- about -->
       <section id="about" class="block wrap">
         <div class="block-title">
           <p class="kicker">01 / About</p>
@@ -108,7 +105,6 @@
         </div>
       </section>
 
-      <!-- skills -->
       <section id="skills" class="block wrap">
         <div class="block-title">
           <p class="kicker">02 / Skills</p>
@@ -166,7 +162,6 @@
         </div>
       </section>
 
-      <!-- projects -->
       <section id="projects" class="block wrap">
         <div class="block-title title-split">
           <div>
@@ -243,7 +238,6 @@
         </div>
       </section>
 
-      <!-- highlights -->
       <section class="block wrap">
         <div class="block-title">
           <p class="kicker">04 / Highlights</p>
@@ -268,7 +262,6 @@
         </div>
       </section>
 
-      <!-- contact -->
       <section id="contact" class="contact wrap">
         <div>
           <p class="kicker">05 / Contact</p>
@@ -287,7 +280,6 @@
 
     <button id="topBtn" aria-label="Back to top">↑</button>
 
-    <!-- JS Stuff-->
     <script>
       const navLinks = document.querySelectorAll(".menu a");
       const pageSections = document.querySelectorAll("main section[id]");
@@ -295,14 +287,11 @@
       const barFills = document.querySelectorAll(".bar span");
       const skillsBlock = document.getElementById("skills");
 
-      // highlight the nav link for whichever section we're in
       function highlightNav() {
         let currentId = "home";
 
         pageSections.forEach(function (sec) {
-          if (sec.getBoundingClientRect().top <= window.innerHeight * 0.35) {
-            currentId = sec.id;
-          }
+          if (sec.getBoundingClientRect().top <= window.innerHeight * 0.35) { currentId = sec.id; }
         });
 
         navLinks.forEach(function (link) {
@@ -315,7 +304,6 @@
 
       window.addEventListener("scroll", highlightNav);
 
-      // show the back-to-top button once you've scrolled a bit
       window.addEventListener("scroll", function () {
         if (window.scrollY > 400) {
           topBtn.classList.add("show");
@@ -331,7 +319,6 @@
         });
       });
 
-      // fill the skill bars the first time the skills section scrolls into view
       const barObserver = new IntersectionObserver(
         function (entries) {
           if (entries[0].isIntersecting) {
