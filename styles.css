@@ -8,7 +8,6 @@
   --accent: #dfff32;
   --max: 1180px;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -143,6 +142,7 @@ a {
   max-width: 840px;
 }
 
+
 .hero-tag,
 .kicker {
   color: var(--accent);
@@ -223,7 +223,6 @@ a {
   grid-row: span 2;
   padding: 32px;
 }
-
 .about-main p + p {
   margin-top: 18px;
 }
@@ -389,7 +388,6 @@ a {
 .contact h2 {
   max-width: 720px;
 }
-
 .contact-note {
   max-width: 690px;
   margin-top: 14px;
@@ -472,6 +470,8 @@ a {
   }
 }
 
+
+
 @media (max-width: 620px) {
   .site-header {
     top: 7px;
@@ -503,6 +503,7 @@ a {
     padding: 7px 10px;
     font-size: 12px;
   }
+
 
   .hero {
     min-height: calc(100vh - 100px);
@@ -555,6 +556,7 @@ a {
     align-items: flex-start;
     flex-direction: column;
   }
+
 
   #topBtn {
     right: 18px;
